@@ -1,35 +1,47 @@
-
-
-h1,h2,h3,h4,h5,h6{
-  font-family:$altivo;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $altivo;
   font-weight: 300;
 }
 
-h1{
-  font-size: 56px;
+h1 {
+  font-size: 24px;
   line-height: 1em;
 }
 
-h2{
+h2 {
   font-size: 32px;
   line-height: 1.75em;
 }
 
-h3{
+h3 {
   font-size: 24px;
   line-height: 1.4em;
 }
 
-p{
+p {
   font-family: $bai-jamjuree;
   font-size: 18px;
-
 }
 
-@media(max-width:1024px){
-  h1{
-    font-size: 32px;
+@include media-breakpoint-up(xxl) {
+  h1 {
+    font-size: 56px;
   }
+}
 
-  
+@include media-breakpoint-up(lg) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size: 38px;
+  }
 }
