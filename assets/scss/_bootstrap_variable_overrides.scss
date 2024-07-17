@@ -1,2 +1,27 @@
 // Bootstrap overrides variables
-// $primary: #6610f2;
+$primary: #7b9645;
+$secondary: #53514d;
+$light: #fff;
+
+$container-max-widths: (
+  sm: 462px,
+  md: 608px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1396px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 575px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1440px,
+);
+
+$headings-margin-bottom: 0;
+$headings-font-family: $altivo;
+$headings-font-weight: 300;
+$headings-line-height: 1.2;
+$headings-color: $secondary;
