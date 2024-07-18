@@ -41,7 +41,5 @@ p {
 }
 
 @include media-breakpoint-up(md) {
-  h1 {
-    font-size: 38px;
-  }
+  font-size: 38px;
 }
