@@ -20,42 +20,63 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm">
+    <nav class="navbar bg-body-tertiary navbar-expand-xl">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/celina-familydentistry-dark-logo.svg" class="d-inline-block align-top" alt=""
-            loading="lazy">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">Dental Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">For Patients</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
+        <a class="navbar-brand" href="#"><img src="assets/img/celina-familydentistry-dark-logo.svg" alt=""></a>
+        <div class=" d-flex flex-row gap-3 d-xl-none">
+          <a href="#"><img src="assets/img/call.svg" alt=""></a>
+          <a href="#"><img src="/assets/img/location.svg" alt=""></a>
+          <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
 
-        <div class="d-none d-xl-block col-auto sticky-nav-cta">
-          <div class="sticky-nav-cta-inner d-xl-flex align-items-center gap-3">
-            <a href="#" class="btn btn-primary primary">No Insurance? No Problem!</a>
-            <a href="#"><img src="assets/img/call.svg" alt="phone"></a>
-            <a href="#"><img src="assets/img/location.svg" alt="location"></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/assets/img/home/celina-family-logo.svg"
+                alt="">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-evenly align-items-xl-center flex-grow-1 pe-3">
 
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dental Services</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">For Patients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="contact-info d-md-none d-xl-flex align-items-center gap-4">
+              <a href="#" class="btn btn-primary">No Insurance? No Problem!</a>
+              <a href="#"><img src="/assets/img/home/call.svg" alt=""></a>
+              <a href="#"><img src="/assets/img/home/location.svg" alt=""></a>
+            </div>
+
+          </div>
         </div>
-
       </div>
     </nav>
   </header>
