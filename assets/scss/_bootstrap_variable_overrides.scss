@@ -20,15 +20,21 @@ $grid-breakpoints: (
   xxl: 1440px,
 );
 
+// Heading Style
 $headings-margin-bottom: 0;
 $headings-font-family: $altivo;
 $headings-font-weight: 300;
 $headings-line-height: 1.2;
 $headings-color: $secondary;
 
+// Buttons Style
 $btn-color: $primary;
 $btn-padding-y: 20px;
 $btn-padding-x: 10px;
 $btn-font-family: $altivo;
 $btn-font-size: 18px;
 $btn-line-height: 1em;
+
+// Navbar Style
+$navbar-padding: 0;
+$navbar-nav-link-padding-x: 0.5rem;
