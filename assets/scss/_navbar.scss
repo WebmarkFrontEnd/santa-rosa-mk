@@ -3,3 +3,55 @@
     max-width: 90%;
   }
 }
+
+// Mobile Screen
+header {
+  .nav-item {
+    font-size: 14px;
+  }
+  .offcanvas.show {
+    .navbar-brand {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .navbar-brand {
+    img {
+      max-width: 60%;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  header {
+    .dropdown-menu {
+      li {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      :first-child {
+        margin-bottom: 10px;
+      }
+    }
+    .nav-item {
+      a {
+        padding: 0 !important;
+      }
+    }
+    .navbar-brand {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// Large Devices
+@include media-breakpoint-up(lg) {
+  header {
+    .nav-item {
+      font-size: 24px;
+    }
+  }
+}
