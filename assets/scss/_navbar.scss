@@ -1,10 +1,33 @@
 header {
   .container-fluid {
     max-width: 90%;
+    .dropdown-toggle:after {
+      content: '';
+      display: block;
+      border-top: 0px;
+      border-right: 2px solid $dark;
+      border-bottom: 2px solid $dark;
+      border-left: 0px;
+      transform: rotate(45deg);
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      cursor: pointer;
+      right: -23px;
+      top: 10px;
+      margin-left: 0px;
+      vertical-align: middle;
+    }
   }
   .navbar {
     li {
       font-family: $altivo;
+      font-weight: 300;
+    }
+  }
+  .contact-info {
+    img {
+      max-width: 32px;
     }
   }
 }
@@ -47,6 +70,11 @@ header {
     .navbar-brand {
       img {
         max-width: 100%;
+      }
+    }
+    .contact-info {
+      img {
+        max-width: 40px;
       }
     }
   }
