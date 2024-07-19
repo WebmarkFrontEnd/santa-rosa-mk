@@ -1,7 +1,18 @@
-.navbar {
+header {
   .container-fluid {
     max-width: 90%;
   }
+  .navbar {
+    .navbar-nav {
+      a {
+        font-family: $altivo;
+      }
+    }
+  }
+}
+
+header .container-fluid .navbar .navbar-nav a {
+  font-family: $altivo;
 }
 
 // Mobile Screen
