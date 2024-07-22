@@ -32,6 +32,11 @@ header {
         max-width: 50%;
       }
     }
+    .contact-info {
+      .btn {
+        font-size: 14px;
+      }
+    }
   }
 
   .top-bar {
@@ -63,7 +68,6 @@ header {
   }
 }
 
-// Mobile Screen
 header {
   .nav-item {
     font-size: 14px;
@@ -113,6 +117,9 @@ header {
       img {
         max-width: 32px;
       }
+      .btn {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -120,14 +127,17 @@ header {
 // Large Devices
 @include media-breakpoint-up(lg) {
   header {
+    .container-fluid {
+      max-width: 95%;
+    }
     .nav-item {
       font-size: 16px;
     }
     .dropdown-toggle:after {
       border-right: 2px solid #201818 !important;
       border-bottom: 2px solid #201818 !important;
-      height: 12px !important;
-      width: 12px !important;
+      height: 8px !important;
+      width: 8px !important;
       right: -10% !important;
       top: 26% !important;
     }
@@ -145,6 +155,12 @@ header {
     .nav-item {
       font-size: 18px;
     }
+    .dropdown-toggle:after {
+      height: 12px !important;
+      width: 12px !important;
+      right: -12% !important;
+      top: 20% !important;
+    }
   }
 }
 
@@ -153,6 +169,12 @@ header {
   header {
     .nav-item {
       font-size: 24px;
+    }
+    .dropdown-toggle:after {
+      height: 12px !important;
+      width: 12px !important;
+      right: -10% !important;
+      top: 24% !important;
     }
   }
 }
