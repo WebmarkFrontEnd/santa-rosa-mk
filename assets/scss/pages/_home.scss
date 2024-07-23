@@ -8,36 +8,43 @@
 //   background-position: center;
 // }
 
+//Home Header Start
+
 //Mobile Device
+
 #home-header {
   background: linear-gradient(
       180deg,
-      rgba(83, 81, 77, 0.64) 50%,
-      rgba(83, 81, 77, 0.64) 50%
+      $light-grey-gradient 50%,
+      $light-grey-gradient 50%
     ),
-    url('/assets/img/home-header.jpg');
+    url('/assets/img/home/home-header-mobile.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $secondary;
   height: 708px;
   .content-wrapper {
-    max-width: 75%;
+    max-width: 85%;
     margin: 0 auto;
   }
   img {
     max-width: 130px;
     padding-bottom: 32px;
   }
+
   .btn-wrapper {
     flex-direction: column;
     gap: 16px;
     padding: 30px 0 35px;
+
     .btn {
       border-radius: 40px;
       font-size: 16px;
       padding: 13px 20px;
+      text-transform: uppercase;
     }
+
     .btn-primary {
       color: $light;
       border: 2px solid $primary;
@@ -47,6 +54,7 @@
         border: 2px solid $light;
       }
     }
+
     .btn-light {
       color: $dark;
       border: 2px solid $light;
@@ -56,6 +64,7 @@
         border: 2px solid $primary;
       }
     }
+
     .btn-dark {
       background: $secondary;
       border: 2px solid $primary;
@@ -67,7 +76,9 @@
     }
   }
 }
+
 //Small Device Home Header
+
 @include media-breakpoint-up(sm) {
   #home-header {
     height: 890px;
@@ -78,6 +89,7 @@
       max-width: 225px;
       padding-bottom: 24px;
     }
+
     .btn-wrapper {
       padding: 24px 0 48px;
       .btn {
@@ -91,7 +103,9 @@
     }
   }
 }
+
 //Medium Device
+
 @include media-breakpoint-up(md) {
   #home-header {
     height: 800px;
@@ -102,24 +116,28 @@
       max-width: 140px;
       padding-bottom: 24px;
     }
+
     .btn-dark {
       position: absolute;
       left: 50%;
-      bottom: -10%;
+      bottom: -8%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, 0%);
+      z-index: 2;
     }
   }
 }
+
 //Large Device
+
 @include media-breakpoint-up(lg) {
   #home-header {
     background: linear-gradient(
         180deg,
-        rgba(83, 81, 77, 0.64) 50%,
-        rgba(83, 81, 77, 0.64) 50%
+        $light-grey-gradient 50%,
+        $light-grey-gradient 50%
       ),
-      url('/assets/img/home-header.jpg');
+      url('/assets/img/home/home-header.jpg');
     height: 902px;
     .content-wrapper {
       max-width: 624px;
@@ -134,17 +152,81 @@
         padding-top: 40px;
         padding-right: 20px;
       }
+
       .col:nth-child(even) {
         padding-top: 40px;
         padding-left: 20px;
       }
     }
+
     img {
       max-width: 244px;
       padding-bottom: 44px;
     }
   }
 }
+
 //Home Header End
-//***************************//
-//***************************//
+
+//Celina Logo Banner Start
+
+//Mobile Device
+
+#celina-logo-banner {
+  padding-top: 90px;
+  padding-bottom: 112px;
+  .top-divider,
+  .bottom-divider {
+    position: absolute;
+    background: $secondary;
+  }
+
+  .top-divider {
+    top: 0;
+  }
+
+  .bottom-divider {
+    bottom: 0;
+  }
+
+  .row {
+    justify-content: center;
+    img {
+      width: 122px;
+    }
+  }
+}
+
+//Medium Device
+
+@include media-breakpoint-up(md) {
+  #celina-logo-banner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .top-divider,
+    .bottom-divider {
+      height: 80px !important;
+    }
+
+    .row {
+      img {
+        width: 74px;
+      }
+    }
+  }
+}
+
+//Large Device
+
+@include media-breakpoint-up(lg) {
+  #celina-logo-banner {
+    padding: 5rem 0 8rem;
+    .row {
+      img {
+        width: 40%;
+      }
+    }
+  }
+}
+
+//Celina Logo Banner End
