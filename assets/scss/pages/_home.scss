@@ -18,7 +18,7 @@
       $light-grey-gradient 50%,
       $light-grey-gradient 50%
     ),
-    url('/assets/img/home/home-header-mobile.jpg');
+    url('/assets/img/home-header.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@
     .btn-dark {
       position: absolute;
       left: 50%;
-      bottom: -8%;
+      bottom: -8.5%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, 0%);
       z-index: 2;
@@ -137,7 +137,7 @@
         $light-grey-gradient 50%,
         $light-grey-gradient 50%
       ),
-      url('/assets/img/home/home-header.jpg');
+      url('/assets/img/home-header.jpg');
     height: 902px;
     .content-wrapper {
       max-width: 624px;
@@ -173,24 +173,16 @@
 //Mobile Device
 
 #celina-logo-banner {
-  padding-top: 90px;
-  padding-bottom: 112px;
-  .top-divider,
-  .bottom-divider {
-    position: absolute;
-    background: $secondary;
+  hr {
+    height: 56px;
+    margin: 0;
+    border: 0;
+    opacity: 1;
+    background-color: $secondary;
   }
-
-  .top-divider {
-    top: 0;
-  }
-
-  .bottom-divider {
-    bottom: 0;
-  }
-
   .row {
     justify-content: center;
+    padding: 3rem 0 3rem;
     img {
       width: 122px;
     }
@@ -201,17 +193,8 @@
 
 @include media-breakpoint-up(md) {
   #celina-logo-banner {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    .top-divider,
-    .bottom-divider {
-      height: 80px !important;
-    }
-
-    .row {
-      img {
-        width: 74px;
-      }
+    hr:first-child {
+      height: 80px;
     }
   }
 }
@@ -220,10 +203,10 @@
 
 @include media-breakpoint-up(lg) {
   #celina-logo-banner {
-    padding: 5rem 0 8rem;
     .row {
+      padding: 4rem 0 4rem;
       img {
-        width: 40%;
+        width: 9% !important;
       }
     }
   }
