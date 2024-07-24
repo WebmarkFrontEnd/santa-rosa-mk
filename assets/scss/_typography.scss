@@ -25,7 +25,7 @@ h3 {
 
 p {
   font-family: $bai-jamjuree;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @include media-breakpoint-up(xxl) {
@@ -37,6 +37,9 @@ p {
 @include media-breakpoint-up(lg) {
   h1 {
     font-size: 50px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 

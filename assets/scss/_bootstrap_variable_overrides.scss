@@ -3,8 +3,8 @@ $primary: #7b9645;
 $secondary: #53514d;
 $light: #fff;
 $dark: #201818;
-$dark-grey-gradient: rgb(32 24 24 / 64%);
-$light-grey-gradient: rgb(83 81 77 / 64%);
+// $dark-grey-gradient: rgb(32 24 24 / 64%);
+// $light-grey-gradient: rgb(83 81 77 / 64%);
 
 $container-max-widths: (
   sm: 462px,
@@ -37,6 +37,7 @@ $btn-padding-x: 10px;
 $btn-font-family: $altivo;
 $btn-font-size: 18px;
 $btn-line-height: 1em;
+$btn-border-radius: 40px;
 
 // Navbar Style
 $navbar-padding: 0;
