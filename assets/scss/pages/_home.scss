@@ -237,6 +237,10 @@
   }
 }
 #our-services-carousel {
+  .carousel-inner {
+    display: flex;
+    gap: 10px;
+  }
   .carousel-item {
     height: auto;
     img {
@@ -258,6 +262,14 @@
       .content {
         background: $secondary;
         padding: 30px;
+      }
+      .content-wrapper {
+        max-height: 292px;
+        overflow: auto;
+        margin-bottom: 20px;
+        p {
+          margin-right: 10px;
+        }
       }
 
       .btn {
