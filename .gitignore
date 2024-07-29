@@ -3,5 +3,4 @@ package-lock.json
 /.idea
 /node_modules
 dist
-/assets/fonts
-/assets/js/vendor
+/assets/scss/bootstrap
