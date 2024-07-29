@@ -1,1 +1,15 @@
 // General Style
+
+//Mobile Device Section
+.section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+//Desktop Device Section
+@include media-breakpoint-up(lg) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

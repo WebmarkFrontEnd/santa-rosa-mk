@@ -219,15 +219,13 @@
 
 #our-services {
   padding: 5rem 0;
-  h2 {
+  .title {
     font-size: 18px;
     font-weight: 300;
     color: $primary;
     line-height: 1.33em;
     padding-bottom: 40px;
     text-transform: uppercase;
-    max-width: 240px;
-    margin: 0 auto;
   }
 }
 #our-services-carousel {
@@ -237,9 +235,12 @@
   }
   .carousel-item {
     height: auto;
+    border-radius: 8px;
+    overflow: hidden;
     img {
       position: relative;
-      height: unset;
+      height: 160px;
+      object-fit: cover;
     }
     .carousel-caption {
       position: relative;
@@ -247,11 +248,14 @@
       z-index: unset;
       text-align: left;
       padding: 0px;
+      margin-top: -58px;
+      border-top: 16px solid rgba($light, 0.75);
       .carousel-title {
-        background-color: rgba($primary, 0.64);
-        padding: 15px 30px;
+        background-color: rgba($primary, 0.75);
+        padding: 10px 30px 6px;
         color: $light;
-        margin-top: -70px;
+
+        text-transform: uppercase;
       }
       .content {
         background: $secondary;
@@ -279,6 +283,203 @@
       height: 12px;
       background-color: $secondary;
       border-radius: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #our-services {
+    .title {
+      font-size: 32px;
+      padding-bottom: 80px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+  }
+}
+
+//Medium device
+@include media-breakpoint-up(md) {
+  #our-services {
+    .our-service-accordion {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .title {
+      font-size: 24px;
+    }
+
+    .accordion {
+      background: $secondary;
+    }
+
+    .accordion-item {
+      background: transparent;
+      border: 0;
+      &:first-child {
+        .accordion-button {
+          padding: 34px 16px 10px;
+        }
+      }
+
+      &:last-child {
+        .accordion-button {
+          padding: 10px 16px 24px;
+          &:not(.collapsed) {
+            padding: 10px 16px;
+          }
+        }
+      }
+    }
+
+    .accordion-header {
+      .accordion-button {
+        background: transparent;
+        color: $light;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 10px 16px;
+        line-height: 1em;
+        &:not(.collapsed) {
+          background: #77736f !important;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+        &::after {
+          display: none;
+        }
+
+        &::before {
+          content: '';
+          background: $light;
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .accordion-body {
+      padding: 0 32px 36px;
+      background-color: #77736f;
+      .content-wrapper {
+        color: $light;
+      }
+
+      .our-service-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+
+        &::after {
+          content: '';
+          width: 32px;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            rgba($primary, 0.75) 75%,
+            rgba($light, 0.75) 25%
+          );
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .btn-wrapper {
+        padding-top: 25px;
+        .btn-light {
+          border-radius: 40px;
+          color: $primary;
+          font-size: 18px;
+          width: 100%;
+          padding: 14px 20px;
+          &:hover {
+            background: $primary;
+            color: $light;
+            border: 1px solid $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Large device
+@include media-breakpoint-up(lg) {
+  #our-services {
+    .title {
+      font-size: 32px;
+      padding-bottom: 80px;
+    }
+
+    .accordion-body {
+      padding: 0 48px 32px;
+      .content-wrapper {
+        font-size: 18px;
+      }
+
+      .our-service-img {
+        &::after {
+          width: 56px;
+        }
+      }
+
+      .btn-wrapper {
+        text-align: center;
+        .btn-light {
+          width: unset;
+          padding: 19px 88px;
+        }
+      }
+    }
+
+    .accordion-item {
+      &:first-child {
+        .accordion-button {
+          padding: 56px 48px 24px;
+        }
+      }
+
+      &:last-child {
+        .accordion-button {
+          padding: 24px 47px 56px;
+          &:not(.collapsed) {
+            padding: 24px 47px;
+          }
+        }
+      }
+    }
+
+    .accordion-header {
+      .accordion-button {
+        padding: 24px 46px;
+        font-size: 24px;
+        &::before {
+          width: 16px;
+          height: 16px;
+          margin-right: 19px;
+        }
+        &:not(.collapsed) {
+          font-size: 32px;
+          box-shadow: none;
+          &::before {
+            width: 18px;
+            height: 18px;
+            margin-right: 16px;
+          }
+        }
+      }
     }
   }
 }

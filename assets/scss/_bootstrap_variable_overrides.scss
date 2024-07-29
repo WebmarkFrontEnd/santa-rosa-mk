@@ -7,10 +7,11 @@ $dark: #201818;
 // $light-grey-gradient: rgb(83 81 77 / 64%);
 
 $container-max-widths: (
+  xs: 302px,
   sm: 462px,
   md: 608px,
-  lg: 960px,
-  xl: 1140px,
+  lg: 90%,
+  xl: 90%,
   xxl: 1396px,
 );
 
@@ -18,10 +19,13 @@ $grid-breakpoints: (
   xs: 0,
   sm: 575px,
   md: 768px,
-  lg: 1024px,
+  lg: 980px,
   xl: 1280px,
   xxl: 1440px,
 );
+
+$container-padding-x: 0;
+$container-padding-y: 0;
 
 // Heading Style
 $headings-margin-bottom: 0;
