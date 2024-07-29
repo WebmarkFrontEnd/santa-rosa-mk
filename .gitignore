@@ -4,5 +4,4 @@ package-lock.json
 /node_modules
 dist
 /assets/fonts
-/assets/scss/bootstrap
 /assets/js/vendor
