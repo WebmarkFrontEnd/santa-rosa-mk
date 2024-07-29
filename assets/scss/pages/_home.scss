@@ -13,19 +13,12 @@
 //Mobile Device
 
 #home-header {
-  background: url('/assets/img/home-header.jpg');
-  // background: linear-gradient(
-  //     180deg,
-  //     rgba($secondary, 0.64),
-  //     rgba($secondary, 0.64)
-  //   ),
-  //   url('/assets/img/home-header.jpg');
-  // background: linear-gradient(
-  //     180deg,
-  //     $light-grey-gradient 50%,
-  //     $light-grey-gradient 50%
-  //   ),
-  //   url('/assets/img/home-header.jpg');
+  background: linear-gradient(
+      180deg,
+      rgba($secondary, 0.64),
+      rgba($secondary, 0.64)
+    ),
+    url('/assets/img/home-header.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
