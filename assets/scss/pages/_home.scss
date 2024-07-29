@@ -277,7 +277,7 @@
     }
   }
   .carousel-indicators {
-    bottom: -50px;
+    bottom: -65px;
     button {
       width: 12px;
       height: 12px;
@@ -488,6 +488,7 @@
 // Mobile
 
 .meet-our-doctor {
+  overflow: hidden;
   .container {
     max-width: 100%;
   }
@@ -497,6 +498,58 @@
     padding: 24px 0px 80px;
     h2 {
       margin-bottom: 16px;
+    }
+    .dark-btn {
+      color: $light;
+      background-color: $secondary;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .meet-our-doctor {
+    background-color: rgba($light, 0.64);
+    position: relative;
+    overflow: hidden;
+    .container {
+      max-width: 80%;
+    }
+    .row {
+      justify-content: flex-end;
+    }
+    .top-divider {
+      display: block;
+      opacity: 1;
+      border: 0;
+      margin: 0;
+      height: 220px;
+      background-color: rgba($secondary, 0.64);
+      z-index: 2;
+      position: relative;
+      margin-bottom: -6%;
+    }
+    .meet-our-team-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-size: cover;
+      background-position: right;
+      background-image: linear-gradient(
+          90deg,
+          rgba($dark, 0) 80%,
+          rgba($light, 1) 80%
+        ),
+        url('../img/about-dr-section-bg.jpg');
+    }
+    .doctor-thumbnail {
+      z-index: 3;
+    }
+    .content {
+      max-width: 100%;
+      padding: 0;
     }
   }
 }
