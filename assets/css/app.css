@@ -12155,7 +12155,7 @@ header .navbar-brand img {
   }
 }
 #home-header {
-  background: linear-gradient(180deg, rgba(83, 81, 77, 0.64), rgba(83, 81, 77, 0.64)), url("../img/celina-family-logo.svg");
+  background: linear-gradient(180deg, rgba(83, 81, 77, 0.64), rgba(83, 81, 77, 0.64)), url("/assets/img/home-header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
