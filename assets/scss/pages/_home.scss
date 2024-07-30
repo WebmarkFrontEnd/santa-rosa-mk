@@ -219,6 +219,11 @@
 
 #our-services {
   padding: 5rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba($light, 0.8) 50%,
+    rgba($light, 0) 50%
+  );
   .title {
     font-size: 18px;
     font-weight: 300;

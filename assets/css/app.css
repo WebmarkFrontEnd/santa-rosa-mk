@@ -12327,6 +12327,7 @@ header .navbar-brand img {
 }
 #our-services {
   padding: 5rem 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 50%);
 }
 #our-services .title {
   font-size: 18px;
