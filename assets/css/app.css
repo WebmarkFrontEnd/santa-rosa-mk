@@ -12759,6 +12759,66 @@ header .navbar-brand img {
     margin-bottom: -20%;
   }
 }
+.call-to-action {
+  padding: 40px 0 55px;
+  background: linear-gradient(90deg, #7b9645 24%, white 0%);
+}
+.call-to-action .cta-wrapper {
+  max-width: 76%;
+  margin: auto;
+}
+.call-to-action .heading {
+  font-size: 32px;
+  line-height: 1.75em;
+}
+.call-to-action .btn {
+  font-size: 16px;
+  width: 100%;
+  text-transform: uppercase;
+  background: #53514d;
+  padding: 15px 10px;
+  margin-top: 25px;
+}
+.call-to-action .btn:hover {
+  background: #201818;
+}
+
+@media (min-width: 768px) {
+  .call-to-action {
+    padding: 48px 0 32px;
+    background: linear-gradient(90deg, #7b9645 24%, white 0%);
+    text-align: center;
+  }
+  .call-to-action .heading {
+    font-size: 32px;
+    text-align: center;
+  }
+  .call-to-action .btn {
+    font-size: 18px;
+    width: unset;
+    background: #7b9645;
+    padding: 15px 30px;
+    border: 1px solid #7b9645;
+    margin-top: 32px;
+  }
+  .call-to-action .btn:hover {
+    background: #53514d;
+  }
+}
+@media (min-width: 1280px) {
+  .call-to-action {
+    padding: 100px 0 60px;
+    background: linear-gradient(90deg, #7b9645 20%, white 0%);
+  }
+  .call-to-action .heading {
+    font-size: 55px;
+  }
+}
+@media (min-width: 1440px) {
+  .call-to-action .heading {
+    font-size: 72px;
+  }
+}
 /* CUSTOM STYLES
 -------------------------------------------------- */
 html {
