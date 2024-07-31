@@ -878,3 +878,233 @@
     }
   }
 }
+
+//Contact Info Start
+
+//Mobile Devices
+
+#contact-info {
+  padding: 80px 0 160px;
+  .row {
+    background: $secondary;
+    border-radius: 8px;
+    overflow: hidden;
+
+    #map {
+      &:first-child {
+        position: relative;
+        &:after {
+          content: '';
+          width: 100%;
+          height: 56px;
+          background: linear-gradient(
+            180deg,
+            rgba($light, 0.9) 25%,
+            rgba($primary, 0.9) 25%
+          );
+          position: absolute;
+          left: 0;
+          bottom: 6px;
+        }
+      }
+    }
+  }
+
+  .content-wrapper {
+    padding: 40px 32px;
+
+    .content {
+      p,
+      a {
+        color: $light;
+        text-decoration: none;
+      }
+
+      p {
+        text-transform: uppercase;
+        padding-bottom: 16px;
+      }
+
+      a {
+        &:last-child {
+          display: block;
+          padding-bottom: 24px;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 130px;
+    padding-bottom: 24px;
+  }
+
+  iframe {
+    height: 216px;
+  }
+
+  .btn-wrapper {
+    .btn {
+      width: 100%;
+      border-radius: 40px;
+      font-size: 16px;
+      padding: 15px;
+      text-transform: uppercase;
+    }
+
+    .btn-primary {
+      color: $light;
+      &:hover {
+        background: $light;
+        color: $secondary;
+        border: 1px solid $light;
+      }
+    }
+
+    .btn-light {
+      color: $secondary;
+      margin-top: 16px;
+      padding: 15px 10px;
+      &:hover {
+        background: $dark;
+        color: $light;
+        border: 1px solid $dark;
+      }
+    }
+  }
+}
+
+//Small Device
+
+@include media-breakpoint-up(sm) {
+  #contact-info {
+    iframe {
+      height: 272px;
+    }
+
+    img {
+      width: 225px;
+    }
+
+    .content-wrapper {
+      padding: 32px 34px 48px;
+      .content {
+        max-width: 225px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+//Medium Device
+
+@include media-breakpoint-up(md) {
+  #contact-info {
+    padding: 120px 0;
+    .row {
+      #map {
+        &:first-child {
+          &:after {
+            content: '';
+            width: 25px;
+            height: 100%;
+            background: linear-gradient(
+              90deg,
+              rgba($light, 0.9) 25%,
+              rgba($primary, 0.9) 25%
+            );
+            left: unset;
+            right: -1px;
+            top: 0;
+            bottom: unset;
+          }
+        }
+      }
+    }
+
+    .btn-wrapper {
+      .btn-light {
+        font-size: 12px;
+      }
+    }
+
+    iframe {
+      height: 100%;
+    }
+
+    img {
+      width: 140px;
+      padding-bottom: 8px;
+    }
+
+    .row {
+      #map {
+        &:first-child {
+          &:after {
+            width: 56px;
+          }
+        }
+      }
+    }
+
+    .content-wrapper {
+      .content {
+        max-width: 140px;
+        margin: auto;
+        a {
+          font-size: 10px;
+          &:last-child {
+            padding-bottom: 16px;
+          }
+        }
+        p {
+          font-size: 12px;
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+//Large Device
+
+@include media-breakpoint-up(lg) {
+  #contact-info {
+    img {
+      width: 226px;
+      padding-bottom: 28px;
+    }
+
+    .content-wrapper {
+      padding: 80px 0 96px;
+      .content {
+        max-width: 226px;
+        margin: auto;
+        a {
+          font-size: 16px;
+          &:last-child {
+            padding-bottom: 24px;
+          }
+        }
+        p {
+          font-size: 16px;
+          padding-bottom: 16px;
+        }
+      }
+    }
+
+    .btn-wrapper {
+      max-width: 292px;
+      margin: auto;
+      .btn {
+        font-size: 18px;
+        padding: 23px 28px;
+      }
+    }
+  }
+}
+
+//Celina Contact Info End
