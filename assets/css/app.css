@@ -12821,18 +12821,18 @@ header .navbar-brand img {
     line-height: 1.11em;
   }
 }
-#contact-info {
+.celina-contact-info {
   padding: 80px 0 160px;
 }
-#contact-info .row {
+.celina-contact-info .row {
   background: #53514d;
   border-radius: 8px;
   overflow: hidden;
 }
-#contact-info .row #map:first-child {
+.celina-contact-info .row #map:first-child {
   position: relative;
 }
-#contact-info .row #map:first-child:after {
+.celina-contact-info .row #map:first-child:after {
   content: "";
   width: 100%;
   height: 56px;
@@ -12841,75 +12841,75 @@ header .navbar-brand img {
   left: 0;
   bottom: 6px;
 }
-#contact-info .content-wrapper {
+.celina-contact-info .content-wrapper {
   padding: 40px 32px;
 }
-#contact-info .content-wrapper .content p,
-#contact-info .content-wrapper .content a {
+.celina-contact-info .content-wrapper .content p,
+.celina-contact-info .content-wrapper .content a {
   color: #fff;
   text-decoration: none;
 }
-#contact-info .content-wrapper .content p {
+.celina-contact-info .content-wrapper .content p {
   text-transform: uppercase;
   padding-bottom: 16px;
 }
-#contact-info .content-wrapper .content a:last-child {
+.celina-contact-info .content-wrapper .content a:last-child {
   display: block;
   padding-bottom: 24px;
 }
-#contact-info img {
+.celina-contact-info img {
   width: 130px;
   padding-bottom: 24px;
 }
-#contact-info iframe {
+.celina-contact-info iframe {
   height: 216px;
 }
-#contact-info .btn-wrapper .btn {
+.celina-contact-info .btn-wrapper .btn {
   width: 100%;
   border-radius: 40px;
   font-size: 16px;
   padding: 15px;
   text-transform: uppercase;
 }
-#contact-info .btn-wrapper .btn-primary {
+.celina-contact-info .btn-wrapper .btn-primary {
   color: #fff;
 }
-#contact-info .btn-wrapper .btn-primary:hover {
+.celina-contact-info .btn-wrapper .btn-primary:hover {
   background: #fff;
   color: #53514d;
   border: 1px solid #fff;
 }
-#contact-info .btn-wrapper .btn-light {
+.celina-contact-info .btn-wrapper .btn-light {
   color: #53514d;
   margin-top: 16px;
   padding: 15px 10px;
 }
-#contact-info .btn-wrapper .btn-light:hover {
+.celina-contact-info .btn-wrapper .btn-light:hover {
   background: #201818;
   color: #fff;
   border: 1px solid #201818;
 }
 
 @media (min-width: 575px) {
-  #contact-info iframe {
+  .celina-contact-info iframe {
     height: 272px;
   }
-  #contact-info img {
+  .celina-contact-info img {
     width: 225px;
   }
-  #contact-info .content-wrapper {
+  .celina-contact-info .content-wrapper {
     padding: 32px 34px 48px;
   }
-  #contact-info .content-wrapper .content {
+  .celina-contact-info .content-wrapper .content {
     max-width: 225px;
     margin: auto;
   }
 }
 @media (min-width: 768px) {
-  #contact-info {
+  .celina-contact-info {
     padding: 120px 0;
   }
-  #contact-info .row #map:first-child:after {
+  .celina-contact-info .row #map:first-child:after {
     content: "";
     width: 25px;
     height: 100%;
@@ -12919,61 +12919,61 @@ header .navbar-brand img {
     top: 0;
     bottom: unset;
   }
-  #contact-info .btn-wrapper .btn-light {
+  .celina-contact-info .btn-wrapper .btn-light {
     font-size: 12px;
   }
-  #contact-info iframe {
+  .celina-contact-info iframe {
     height: 100%;
   }
-  #contact-info img {
+  .celina-contact-info img {
     width: 140px;
     padding-bottom: 8px;
   }
-  #contact-info .row #map:first-child:after {
+  .celina-contact-info .row #map:first-child:after {
     width: 56px;
   }
-  #contact-info .content-wrapper .content {
+  .celina-contact-info .content-wrapper .content {
     max-width: 140px;
     margin: auto;
   }
-  #contact-info .content-wrapper .content a {
+  .celina-contact-info .content-wrapper .content a {
     font-size: 10px;
   }
-  #contact-info .content-wrapper .content a:last-child {
+  .celina-contact-info .content-wrapper .content a:last-child {
     padding-bottom: 16px;
   }
-  #contact-info .content-wrapper .content p {
+  .celina-contact-info .content-wrapper .content p {
     font-size: 12px;
     padding-bottom: 8px;
   }
 }
 @media (min-width: 980px) {
-  #contact-info img {
+  .celina-contact-info img {
     width: 226px;
     padding-bottom: 28px;
   }
-  #contact-info .content-wrapper {
+  .celina-contact-info .content-wrapper {
     padding: 80px 0 96px;
   }
-  #contact-info .content-wrapper .content {
+  .celina-contact-info .content-wrapper .content {
     max-width: 226px;
     margin: auto;
   }
-  #contact-info .content-wrapper .content a {
+  .celina-contact-info .content-wrapper .content a {
     font-size: 16px;
   }
-  #contact-info .content-wrapper .content a:last-child {
+  .celina-contact-info .content-wrapper .content a:last-child {
     padding-bottom: 24px;
   }
-  #contact-info .content-wrapper .content p {
+  .celina-contact-info .content-wrapper .content p {
     font-size: 16px;
     padding-bottom: 16px;
   }
-  #contact-info .btn-wrapper {
+  .celina-contact-info .btn-wrapper {
     max-width: 292px;
     margin: auto;
   }
-  #contact-info .btn-wrapper .btn {
+  .celina-contact-info .btn-wrapper .btn {
     font-size: 18px;
     padding: 23px 28px;
   }
