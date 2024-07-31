@@ -1107,3 +1107,21 @@
 }
 
 //Celina Contact Info End
+
+//Footer
+
+footer {
+  background-color: $primary;
+  padding: 40px 0px 55px;
+  .row {
+    max-width: 76%;
+    margin: auto;
+  }
+  .footer-logo {
+    text-align: center;
+    img {
+      width: 126px;
+      margin-bottom: 24px;
+    }
+  }
+}

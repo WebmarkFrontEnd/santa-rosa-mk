@@ -12978,6 +12978,22 @@ header .navbar-brand img {
     padding: 23px 28px;
   }
 }
+footer {
+  background-color: #7b9645;
+  padding: 40px 0px 55px;
+}
+footer .row {
+  max-width: 76%;
+  margin: auto;
+}
+footer .footer-logo {
+  text-align: center;
+}
+footer .footer-logo img {
+  width: 126px;
+  margin-bottom: 24px;
+}
+
 /* CUSTOM STYLES
 -------------------------------------------------- */
 html {
