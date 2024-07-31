@@ -845,12 +845,13 @@
       font-size: 18px;
       width: unset;
       background: $primary;
-      padding: 15px 30px;
+      padding: 23px 30px;
       border: 1px solid $primary;
-      margin-top: 32px;
+      margin-top: 25px;
     }
     .btn:hover {
       background: $secondary;
+      border: 1px solid $secondary;
     }
   }
 }
@@ -875,6 +876,7 @@
   .call-to-action {
     .heading {
       font-size: 72px;
+      line-height: 1.11em;
     }
   }
 }
@@ -929,9 +931,6 @@
         &:last-child {
           display: block;
           padding-bottom: 24px;
-        }
-        &:hover {
-          color: $primary;
         }
       }
     }

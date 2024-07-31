@@ -12797,12 +12797,13 @@ header .navbar-brand img {
     font-size: 18px;
     width: unset;
     background: #7b9645;
-    padding: 15px 30px;
+    padding: 23px 30px;
     border: 1px solid #7b9645;
-    margin-top: 32px;
+    margin-top: 25px;
   }
   .call-to-action .btn:hover {
     background: #53514d;
+    border: 1px solid #53514d;
   }
 }
 @media (min-width: 1280px) {
@@ -12817,6 +12818,7 @@ header .navbar-brand img {
 @media (min-width: 1440px) {
   .call-to-action .heading {
     font-size: 72px;
+    line-height: 1.11em;
   }
 }
 #contact-info {
@@ -12854,9 +12856,6 @@ header .navbar-brand img {
 #contact-info .content-wrapper .content a:last-child {
   display: block;
   padding-bottom: 24px;
-}
-#contact-info .content-wrapper .content a:hover {
-  color: #7b9645;
 }
 #contact-info img {
   width: 130px;
