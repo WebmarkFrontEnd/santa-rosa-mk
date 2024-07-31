@@ -12979,8 +12979,8 @@ header .navbar-brand img {
   }
 }
 footer {
-  background-color: #7b9645;
-  padding: 40px 0px 55px;
+  background: rgba(123, 150, 69, 0.85);
+  padding: 40px 0 56px;
 }
 footer .row {
   max-width: 76%;
@@ -12993,7 +12993,257 @@ footer .footer-logo img {
   width: 126px;
   margin-bottom: 24px;
 }
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 24px;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "altivo", sans-serif;
+}
+footer .hours .title {
+  color: #fff;
+  padding-bottom: 8px;
+}
+footer .hours table {
+  margin-bottom: 0;
+}
+footer .hours td,
+footer .hours th {
+  background: transparent;
+  color: #fff;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "bai-jamjuree", sans-serif;
+}
+footer .hours td {
+  text-align: end;
+}
 
+.copyright {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #575c6d 60%);
+}
+.copyright .row {
+  flex-direction: column;
+  text-align: center;
+  max-width: 62%;
+  margin: auto;
+}
+.copyright .dental-logo img {
+  width: 110px;
+}
+.copyright .col:first-child {
+  padding-top: 32px;
+}
+.copyright .col:first-child p {
+  font-family: "altivo", sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.copyright .col:last-child {
+  padding-bottom: 25px;
+}
+.copyright .col:last-child p {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 575px) {
+  footer {
+    background: rgba(32, 24, 24, 0.8);
+    padding: 40px 0 80px;
+  }
+  footer .row {
+    max-width: 60%;
+  }
+  footer .footer-logo img {
+    width: 180px;
+    margin-bottom: 32px;
+  }
+  footer ul li {
+    margin-bottom: 16px;
+  }
+  footer ul li a {
+    font-size: 24px;
+  }
+  footer .hours .title {
+    font-size: 24px;
+    margin-top: 16px;
+  }
+  footer .hours td,
+  footer .hours th {
+    font-size: 18px;
+  }
+  .copyright {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #575c6d 60%);
+  }
+  .copyright .row {
+    max-width: 42%;
+  }
+  .copyright .dental-logo img {
+    width: 164px;
+  }
+  .copyright .col:first-child {
+    padding-top: 73px;
+  }
+  .copyright .col:first-child p {
+    margin-bottom: 30px;
+  }
+  .copyright .col:last-child {
+    padding-bottom: 32px;
+  }
+  .copyright .col:last-child p {
+    margin-bottom: 54px;
+  }
+}
+@media (min-width: 768px) {
+  footer .row {
+    max-width: 100%;
+    flex-direction: row;
+  }
+  footer .footer-logo {
+    text-align: left;
+  }
+  footer .footer-logo img {
+    max-width: 62px;
+    margin-bottom: 0;
+  }
+  footer .menu {
+    align-self: center;
+  }
+  footer .menu p {
+    margin: 0;
+    color: #fff;
+    font-size: 10px;
+  }
+  footer .menu p span {
+    font-size: 14px;
+    font-family: "altivo", sans-serif;
+    font-weight: 300;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 17px;
+  }
+  footer ul li {
+    margin-bottom: 0;
+  }
+  footer ul li a {
+    font-size: 14px;
+  }
+  footer .hours {
+    display: none;
+  }
+  .copyright {
+    overflow: hidden;
+    background: none;
+  }
+  .copyright .row {
+    max-width: 100%;
+    flex-direction: row;
+  }
+  .copyright .dental-logo {
+    position: relative;
+  }
+  .copyright .dental-logo:after {
+    content: "";
+    width: 1000px;
+    height: 100%;
+    background: #575c6d;
+    position: absolute;
+    top: 0;
+    right: -62rem;
+    z-index: -1;
+  }
+  .copyright .dental-logo img {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 15%, #575c6d 15%);
+    padding: 8px 0;
+  }
+  .copyright .col:first-child {
+    padding-top: 0;
+    align-self: center;
+    text-align: start;
+  }
+  .copyright .col:first-child p {
+    margin-bottom: 0;
+    font-size: 10px;
+  }
+  .copyright .col:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+  .copyright .col:last-child p {
+    text-align: end;
+    margin-bottom: 0;
+    margin-right: 10px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 980px) {
+  footer .row {
+    justify-content: space-between;
+  }
+  footer .footer-logo img {
+    max-width: 126px;
+  }
+  footer ul {
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+  footer ul li a {
+    font-size: 16px;
+  }
+  footer .hours {
+    display: block;
+  }
+  .copyright .col:first-child {
+    text-align: left;
+  }
+  .copyright .col:first-child p {
+    font-size: 16px;
+  }
+  .copyright .col:last-child {
+    justify-content: flex-end;
+  }
+  .copyright .col:last-child p {
+    max-width: 212px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1280px) {
+  footer ul li a {
+    font-size: 20px;
+  }
+  footer .hours {
+    align-self: center;
+  }
+  footer .hours .title {
+    margin-top: 0;
+  }
+  footer .hours td,
+  footer .hours th {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
+@media (min-width: 1440px) {
+  footer ul li a {
+    font-size: 24px;
+  }
+}
 /* CUSTOM STYLES
 -------------------------------------------------- */
 html {

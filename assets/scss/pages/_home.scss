@@ -1110,18 +1110,357 @@
 
 //Footer
 
+//Mobile Device
+
 footer {
-  background-color: $primary;
-  padding: 40px 0px 55px;
+  background: rgba($primary, 0.85);
+  padding: 40px 0 56px;
   .row {
     max-width: 76%;
     margin: auto;
   }
+
   .footer-logo {
     text-align: center;
     img {
       width: 126px;
       margin-bottom: 24px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      margin-bottom: 24px;
+      a {
+        color: $light;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: $altivo;
+      }
+    }
+  }
+
+  .hours {
+    .title {
+      color: $light;
+      padding-bottom: 8px;
+    }
+
+    table {
+      margin-bottom: 0;
+    }
+
+    td,
+    th {
+      background: transparent;
+      color: $light;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: $bai-jamjuree;
+    }
+
+    td {
+      text-align: end;
+    }
+  }
+}
+
+.copyright {
+  background: linear-gradient(180deg, rgba($light, 0) 60%, #575c6d 60%);
+  .row {
+    flex-direction: column;
+    text-align: center;
+    max-width: 62%;
+    margin: auto;
+  }
+
+  .dental-logo {
+    img {
+      width: 110px;
+    }
+  }
+
+  .col {
+    &:first-child {
+      padding-top: 32px;
+      p {
+        font-family: $altivo;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 25px;
+      p {
+        font-size: 12px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+//Small Device
+@include media-breakpoint-up(sm) {
+  footer {
+    background: rgba($dark, 0.8);
+    padding: 40px 0 80px;
+    .row {
+      max-width: 60%;
+    }
+
+    .footer-logo {
+      img {
+        width: 180px;
+        margin-bottom: 32px;
+      }
+    }
+
+    ul {
+      li {
+        margin-bottom: 16px;
+        a {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .hours {
+      .title {
+        font-size: 24px;
+        margin-top: 16px;
+      }
+
+      td,
+      th {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .copyright {
+    background: linear-gradient(180deg, rgba($light, 0) 60%, #575c6d 60%);
+    .row {
+      max-width: 42%;
+    }
+
+    .dental-logo {
+      img {
+        width: 164px;
+      }
+    }
+
+    .col {
+      &:first-child {
+        padding-top: 73px;
+        p {
+          margin-bottom: 30px;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 32px;
+        p {
+          margin-bottom: 54px;
+        }
+      }
+    }
+  }
+}
+
+//Medium Device
+@include media-breakpoint-up(md) {
+  footer {
+    .row {
+      max-width: 100%;
+      flex-direction: row;
+    }
+
+    .footer-logo {
+      text-align: left;
+      img {
+        max-width: 62px;
+        margin-bottom: 0;
+      }
+    }
+
+    .menu {
+      align-self: center;
+      p {
+        margin: 0;
+        color: $light;
+        font-size: 10px;
+
+        span {
+          font-size: 14px;
+          font-family: $altivo;
+          font-weight: 300;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 17px;
+      li {
+        margin-bottom: 0;
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .hours {
+      display: none;
+    }
+  }
+
+  .copyright {
+    overflow: hidden;
+    background: none;
+    .row {
+      max-width: 100%;
+      flex-direction: row;
+    }
+
+    .dental-logo {
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 1000px;
+        height: 100%;
+        background: #575c6d;
+        position: absolute;
+        top: 0;
+        right: -62rem;
+        z-index: -1;
+      }
+      img {
+        background: linear-gradient(90deg, rgba($light, 0) 15%, #575c6d 15%);
+        padding: 8px 0;
+      }
+    }
+
+    .col {
+      &:first-child {
+        padding-top: 0;
+        align-self: center;
+        text-align: start;
+        p {
+          margin-bottom: 0;
+          font-size: 10px;
+        }
+      }
+
+      &:last-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+
+        p {
+          text-align: end;
+          margin-bottom: 0;
+          margin-right: 10px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+//Large Device
+@include media-breakpoint-up(lg) {
+  footer {
+    .row {
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      img {
+        max-width: 126px;
+      }
+    }
+
+    ul {
+      justify-content: space-evenly;
+      margin-bottom: 0;
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .hours {
+      display: block;
+    }
+  }
+
+  .copyright {
+    .col {
+      &:first-child {
+        text-align: left;
+        p {
+          font-size: 16px;
+        }
+      }
+
+      &:last-child {
+        justify-content: flex-end;
+        p {
+          max-width: 212px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+//Laptop Device
+@include media-breakpoint-up(xl) {
+  footer {
+    ul {
+      li {
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .hours {
+      align-self: center;
+      .title {
+        margin-top: 0;
+      }
+
+      td,
+      th {
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+//Desktop Device
+@include media-breakpoint-up(xxl) {
+  footer {
+    ul {
+      li {
+        a {
+          font-size: 24px;
+        }
+      }
     }
   }
 }
