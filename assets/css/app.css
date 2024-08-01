@@ -13244,6 +13244,11 @@ footer .hours td {
     font-size: 24px;
   }
 }
+.about-us {
+  background: linear-gradient(180deg, rgba(83, 81, 77, 0.64), rgba(83, 81, 77, 0.64)), url("../img/home-header.jpg");
+  padding: 15% 2% 2%;
+}
+
 /* CUSTOM STYLES
 -------------------------------------------------- */
 html {
