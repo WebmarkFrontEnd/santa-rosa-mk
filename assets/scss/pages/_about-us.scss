@@ -9,6 +9,13 @@
       rgba($secondary, 0.64),
       rgba($secondary, 0.64)
     ),
-    url('../img/home-header.jpg');
-  padding: 15% 2% 2%;
+    url('../img/about-us-header-mobile.jpg');
+  background-color: #706b6b;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .row {
+    height: 490px;
+    align-items: flex-end;
+  }
 }
