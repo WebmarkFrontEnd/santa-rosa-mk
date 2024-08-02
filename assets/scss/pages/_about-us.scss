@@ -1,51 +1,406 @@
-// Add here about page css
-
 // About Header
 // Mobile Device
-
-.about-us {
+#about-us-header {
   background: linear-gradient(
       180deg,
-      rgba($secondary, 0.64),
-      rgba($secondary, 0.64)
+      rgba($secondary, 0.64) 50%,
+      rgba($secondary, 0.64) 50%
     ),
     url('../img/about-us-header-mobile.jpg');
-  background-color: #706b6b;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+
   .row {
-    height: 490px;
+    height: 460px;
     align-items: flex-end;
-    color: $light;
   }
-  .title {
-    color: $light;
-  }
-}
 
-// Tablet Device
-@include media-breakpoint-up(md) {
-  .about-us {
-    .title {
-      font-size: 32px;
-    }
+  .content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    .title,
     p {
-      font-size: 18px;
+      color: $light;
     }
-  }
-}
 
-// Desktop Device
-@include media-breakpoint-up(xl) {
-  .about-us {
     .title {
-      font-size: 56px;
+      padding-bottom: 16px;
     }
+
     p {
-      font-size: 32px;
-      line-height: 1.75em;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-family: $altivo;
       font-weight: 300;
     }
   }
 }
+
+//Small Device
+
+@include media-breakpoint-up(sm) {
+  #about-us-header {
+    .row {
+      height: 524px;
+    }
+
+    .content {
+      max-width: 69%;
+      margin: 0 auto;
+    }
+  }
+}
+
+//Medium Device
+
+@include media-breakpoint-up(md) {
+  #about-us-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    .row {
+      height: 432px;
+    }
+
+    .content {
+      padding-bottom: 16px;
+
+      .title {
+        padding-bottom: 24px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+//Large Device
+
+@include media-breakpoint-up(lg) {
+  #about-us-header {
+    background: linear-gradient(
+        180deg,
+        rgba($secondary, 0.64) 50%,
+        rgba($secondary, 0.64) 50%
+      ),
+      url('../img/about-us-header.jpg');
+    background-position: center;
+
+    .row {
+      height: 540px;
+    }
+
+    .content {
+      max-width: 100%;
+      padding-bottom: 25px;
+
+      .title {
+        padding-bottom: 24px;
+      }
+
+      p {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+//Desktop Device
+
+@include media-breakpoint-up(xxl) {
+  #about-us-header {
+    .container {
+      max-width: 1280px;
+    }
+
+    .content {
+      .title {
+        padding-bottom: 24px;
+        font-size: 56px;
+      }
+    }
+  }
+}
+
+//About Us Header End
+
+//About Content Start
+
+.about-us-content {
+  padding: 24px 0 80px;
+  .row {
+    max-width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    .col {
+      &:last-child {
+        padding-top: 10px;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+//Desktop Device
+
+@include media-breakpoint-up(sm) {
+  .about-us-content {
+    padding: 24px 0 80px;
+    .row {
+      max-width: 69%;
+    }
+  }
+}
+
+//Medium Device
+
+@include media-breakpoint-up(md) {
+  .about-us-content {
+    padding: 24px 0 40px;
+    .row {
+      flex-direction: row;
+      gap: 16px;
+      .col {
+        &:last-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+//Large Device
+
+@include media-breakpoint-up(lg) {
+  .about-us-content {
+    padding: 40px 0 80px;
+    .row {
+      max-width: 100%;
+    }
+  }
+}
+
+//Large Device
+
+@include media-breakpoint-up(xxl) {
+  .about-us-content {
+    .container {
+      max-width: 1280px;
+    }
+  }
+}
+
+//About Us Content End
+
+//Our Team
+//Mobile Device
+
+#our-team {
+  padding: 80px 0;
+  .row {
+    background: rgba($light, 0.8);
+    border-radius: 8px;
+    padding: 32px 32px 56px;
+  }
+
+  .content {
+    .title {
+      font-size: 24px;
+      color: $secondary;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $secondary;
+      margin-bottom: 32px;
+      font-family: $altivo;
+      font-weight: 300;
+    }
+  }
+
+  .our-team-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .card-body {
+    padding: 24px 0 0;
+  }
+
+  .card-img {
+    border-radius: 8px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    color: $secondary;
+    margin-bottom: 16px;
+  }
+
+  .designation {
+    font-size: 16px;
+    color: $secondary;
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    color: $secondary;
+  }
+}
+
+//Small Device
+@include media-breakpoint-up(sm) {
+  #our-team {
+    padding: 40px 0 120px;
+    .row {
+      padding: 40px 40px 56px;
+    }
+
+    .content {
+      padding: 0 10px;
+    }
+
+    .our-team-cards {
+      gap: 40px;
+    }
+
+    .card-body {
+      padding: 16px 10px 0;
+    }
+
+    .card-title {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+//Medium Device
+@include media-breakpoint-up(md) {
+  #our-team {
+    padding: 48px 0 80px;
+
+    .row {
+      padding: 32px 24px 40px;
+    }
+
+    .content {
+      padding: 0 15px;
+      .title {
+        font-size: 32px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .our-team-cards {
+      gap: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      &:nth-child(even) {
+        padding-top: 32px;
+        padding-left: 23px;
+      }
+
+      &:nth-child(odd) {
+        padding-top: 32px;
+        padding-right: 23px;
+      }
+    }
+  }
+}
+
+//Large Device
+@include media-breakpoint-up(lg) {
+  #our-team {
+    .row {
+      padding: 100px 60px;
+    }
+
+    // .card-body {
+    //   max-width: 632px;
+    //   padding: 0;
+    // }
+
+    .our-team-cards {
+      gap: 64px;
+    }
+
+    // .card-img {
+    //   width: 355px;
+    // }
+
+    .content {
+      .title {
+        font-size: 46px;
+      }
+      p {
+        font-size: 24px;
+        line-height: 1.75em;
+        margin-bottom: 64px;
+      }
+    }
+
+    .card {
+      flex-direction: row;
+      align-items: center;
+      gap: 56px;
+      &:nth-child(even) {
+        padding-top: 0;
+        padding-left: 0;
+        flex-direction: row-reverse;
+      }
+
+      &:nth-child(odd) {
+        padding-top: 0;
+        padding-right: 0;
+      }
+    }
+
+    .card-title {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .designation {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+//Desktop Device
+@include media-breakpoint-up(xxl) {
+  #our-team {
+    padding: 80px 0 164px;
+
+    .row {
+      padding: 8% 10%;
+    }
+
+    .content {
+      .title {
+        font-size: 56px;
+      }
+      p {
+        font-size: 32px;
+        line-height: 1.75em;
+        margin-bottom: 64px;
+      }
+    }
+  }
+}
+
+//Our Team End
