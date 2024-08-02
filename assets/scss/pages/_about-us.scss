@@ -17,5 +17,35 @@
   .row {
     height: 490px;
     align-items: flex-end;
+    color: $light;
+  }
+  .title {
+    color: $light;
+  }
+}
+
+// Tablet Device
+@include media-breakpoint-up(md) {
+  .about-us {
+    .title {
+      font-size: 32px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+// Desktop Device
+@include media-breakpoint-up(xl) {
+  .about-us {
+    .title {
+      font-size: 56px;
+    }
+    p {
+      font-size: 32px;
+      line-height: 1.75em;
+      font-weight: 300;
+    }
   }
 }
