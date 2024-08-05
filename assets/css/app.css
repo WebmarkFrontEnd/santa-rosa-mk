@@ -13527,6 +13527,143 @@ footer .hours td {
     margin-bottom: 64px;
   }
 }
+.single-service-header {
+  background: linear-gradient(180deg, rgba(83, 81, 77, 0.64) 50%, rgba(83, 81, 77, 0.64) 50%), url("../img/laser-gum-contouring-mobile.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.single-service-header .container .row {
+  height: 460px;
+  align-items: flex-end;
+}
+.single-service-header .title {
+  color: #fff;
+  max-width: 76%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.single-service-header .container-fluid, .single-service-header .container-xs, .single-service-header .container-sm, .single-service-header .container-md, .single-service-header .container-lg, .single-service-header .container-xl, .single-service-header .container-xxl {
+  background: rgba(32, 24, 24, 0.64);
+}
+.single-service-header .container-fluid .row, .single-service-header .container-xs .row, .single-service-header .container-sm .row, .single-service-header .container-md .row, .single-service-header .container-lg .row, .single-service-header .container-xl .row, .single-service-header .container-xxl .row {
+  max-width: 64%;
+  margin: auto;
+  padding: 24px 0;
+}
+.single-service-header .container-fluid ul, .single-service-header .container-xs ul, .single-service-header .container-sm ul, .single-service-header .container-md ul, .single-service-header .container-lg ul, .single-service-header .container-xl ul, .single-service-header .container-xxl ul {
+  margin-bottom: 0;
+  padding: 0;
+}
+.single-service-header .container-fluid ul li, .single-service-header .container-xs ul li, .single-service-header .container-sm ul li, .single-service-header .container-md ul li, .single-service-header .container-lg ul li, .single-service-header .container-xl ul li, .single-service-header .container-xxl ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.single-service-header .container-fluid ul ::before, .single-service-header .container-xs ul ::before, .single-service-header .container-sm ul ::before, .single-service-header .container-md ul ::before, .single-service-header .container-lg ul ::before, .single-service-header .container-xl ul ::before, .single-service-header .container-xxl ul ::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 100%;
+}
+.single-service-header .container-fluid ul a, .single-service-header .container-xs ul a, .single-service-header .container-sm ul a, .single-service-header .container-md ul a, .single-service-header .container-lg ul a, .single-service-header .container-xl ul a, .single-service-header .container-xxl ul a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "altivo", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+@media (min-width: 575px) {
+  .single-service-header .container .row {
+    height: 522px;
+  }
+  .title {
+    max-width: 66.68%;
+  }
+  .container-fluid .row, .container-xs .row, .container-sm .row, .container-md .row, .container-lg .row, .container-xl .row, .container-xxl .row {
+    max-width: 56%;
+  }
+}
+@media (min-width: 768px) {
+  .single-service-header {
+    background: linear-gradient(180deg, rgba(83, 81, 77, 0.64) 50%, rgba(83, 81, 77, 0.64) 50%), url("../img/laser-gum-contouring-ipad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .single-service-header .row {
+    height: 328px;
+    padding-bottom: 0;
+  }
+  .single-service-header nav .breadcrumb {
+    margin-bottom: 8px;
+  }
+  .single-service-header nav li,
+  .single-service-header nav a {
+    font-size: 18px;
+    font-family: "altivo", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .single-service-header nav li {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .single-service-header nav li:before {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .single-service-header nav a {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  .single-service-header nav a:hover {
+    color: #fff !important;
+  }
+  .single-service-header .title {
+    padding-bottom: 16px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 980px) {
+  .single-service-header {
+    background: linear-gradient(180deg, rgba(83, 81, 77, 0.64) 50%, rgba(83, 81, 77, 0.64) 50%), url("../img/laser-gum-contouring.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .single-service-header .row {
+    height: 542px;
+  }
+  .single-service-header nav .breadcrumb {
+    margin-bottom: 23px;
+  }
+  .single-service-header nav li,
+  .single-service-header nav a {
+    font-size: 32px;
+  }
+  .single-service-header .title {
+    padding-bottom: 24px;
+    font-size: 56px;
+  }
+}
+.service-content .sidebar {
+  display: none;
+}
+.service-content .row {
+  padding: 25px 0px 100px;
+}
+.service-content .content {
+  max-width: 76%;
+  margin: auto;
+}
+
+@media (min-width: 575px) {
+  .service-content .content {
+    max-width: 66%;
+  }
+}
 /* CUSTOM STYLES
 -------------------------------------------------- */
 html {
