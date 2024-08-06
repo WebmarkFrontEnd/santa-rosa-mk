@@ -1,18 +1,18 @@
 // Bootstrap overrides variables
-$primary: #7b9645;
-$secondary: #53514d;
+$primary: #646668;
+$secondary: #186f93;
 $light: #fff;
-$dark: #201818;
+$light-text: #fefefc;
 // $dark-grey-gradient: rgb(32 24 24 / 64%);
 // $light-grey-gradient: rgb(83 81 77 / 64%);
 
 $container-max-widths: (
   xs: 302px,
-  sm: 462px,
+  sm: 480px,
   md: 608px,
   lg: 90%,
   xl: 90%,
-  xxl: 1396px,
+  xxl: 1498px,
 );
 
 // Device Breakpoints
@@ -30,8 +30,8 @@ $container-padding-y: 0;
 
 // Heading Style
 $headings-margin-bottom: 0;
-$headings-font-family: $altivo;
-$headings-font-weight: 300;
+$headings-font-family: $orpheuspro;
+$headings-font-weight: 400;
 $headings-line-height: 1.2;
 $headings-color: $secondary;
 
@@ -39,7 +39,7 @@ $headings-color: $secondary;
 $btn-color: $primary;
 $btn-padding-y: 20px;
 $btn-padding-x: 10px;
-$btn-font-family: $altivo;
+$btn-font-family: $brandon;
 $btn-font-size: 18px;
 $btn-line-height: 1em;
 $btn-border-radius: 40px;

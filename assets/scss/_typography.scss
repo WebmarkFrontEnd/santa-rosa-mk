@@ -4,25 +4,43 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $altivo;
-  font-weight: 300;
-  text-transform: uppercase;
+  font-family: $orpheuspro;
+  font-weight: 400;
 }
 
-h1,
+h1 {
+  font-size: 80px;
+  line-height: 1.27em;
+}
+
 h2 {
-  font-size: 24px;
-  line-height: 1.4em;
+  font-size: 80px;
+  line-height: 1.27em;
 }
 
 h3 {
-  font-size: 18px;
-  line-height: 1.4em;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 1.2em;
 }
 
 p {
-  font-family: $bai-jamjuree;
-  font-size: 16px;
+  font-family: $brandon;
+  font-size: 18px;
+}
+
+.large {
+  font-size: 24px;
+  line-height: 2em;
+}
+
+.small {
+  font-size: 18px;
+  line-height: 1.77em;
 }
 
 @include media-breakpoint-up(md) {
