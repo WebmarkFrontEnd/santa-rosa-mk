@@ -7,40 +7,70 @@
   <meta name="description" content="">
   <title>Santa Rosa Practice</title>
 
-
   <!-- Favicons -->
   <link rel="icon" href="./assets/img/favicon.svg">
 
   <!-- Custom styles for this template with bootstrap css -->
   <!-- build:css -->
   <link href="assets/css/app.css" rel="stylesheet" type="text/css">
-  <!-- endbuild -->
-
+  <!-- Custom Font Family -->
   <link rel="stylesheet" href="https://use.typekit.net/sjj2woj.css">
 </head>
 
 <body>
-  <!--- Navbar --->
-  <header class="navbar-sticky sticky-top">
-    <!---  Top Bar Start --->
-    <div class="top-bar py-2">
-      <div class="container-fluid flex-nowrap p-0 px-md-4 px-lg-5 align-items-center">
-        <p class="text-light text-center text-md-end m-0">CELINA FAMILY DENTISTRY: 3248 S. Preston Rd #140 Celina, Texas
-          75009<a href="tel:(214)-851-0130">(214)-851-0130</a></p>
-      </div>
-    </div>
-    <!---  Top Bar End --->
-    <!---  Navbar Menu Start --->
-    <div class="navbar navbar-expand-md bg-white px-0">
-      <div class="container-fluid flex-nowrap p-0 align-items-center">
+
+  <header class="navbar sticky-top">
+    <div class="container-fluid">
+      <div class="navbar navbar-expand-md bg-white px-0">
         <!-- Navbar brand (Logo) -->
         <a class="navbar-brand-desktop d-none d-lg-block" href="./index.html"><img
-            src="./assets/img/celina-familydentistry-dark-logo.svg" alt="Celina Family Logo"></a>
-        <a class="navbar-brand-mobile d-lg-none" href="./index.html">
-          <img src="./assets/img/celina-family-logo.svg" alt="Celina Family Logo">
-        </a>
-
+            src="./assets/img/santa-rosa-oral-surgery-logo-highres.svg" alt="Santa Rosa"></a>
         <!-- Main navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
+        <nav class="offcanvas offcanvas-end" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="offcanvas-header py-3 pb-0">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/img/celina-familydentistry-dark-logo.svg"
+                alt="Celina Family Logo"></a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 justify-content-evenly">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" aria-current="page" href="./single-services-template.html"
+                  role="button" data-bs-toggle="dropdown" data-bs-trigger="hover" aria-expanded="false">Dental
+                  Services</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item d-block p-0 mb-0" href="#">Services 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-block p-0 mb-0" href="#">Services 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about-us.html">For Patients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+
+  <!--- Navbar
+  <header class="navbar sticky-top">
+    <div class="navbar navbar-expand-md bg-white px-0">
+      <div class="container-fluid flex-nowrap p-0 align-items-center">
+        <a class="navbar-brand-desktop d-none d-lg-block" href="./index.html"><img
+            src="./assets/img/santa-rosa-oral-surgery-logo-highres.svg" alt="Santa Rosa"></a>
         <nav class="offcanvas offcanvas-end" id="navbarNav" aria-labelledby="navbarNavLabel">
           <div class="offcanvas-header py-3 pb-0">
             <a class="navbar-brand" href="./index.html"><img src="./assets/img/celina-familydentistry-dark-logo.svg"
@@ -76,15 +106,13 @@
         </nav>
 
 
-        <!-- Contact Info -->
         <div class="contact-info d-flex gap-3 align-items-center">
-          <!--button  -->
+
           <a class="btn btn-primary text-light d-none d-lg-block rounded-5 p-3" href="#">No Insurance? No Problem!</a>
           <div>
             <a href="#"><img src="./assets/img/call.svg" alt="phone"></a>
             <a href="#"><img src="./assets/img/location.svg" alt="location"></a>
           </div>
-          <!-- Mobile offcanvas menu toggler (Hamburger) -->
           <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -92,8 +120,10 @@
         </div>
       </div>
     </div>
-    <!---  Navbar Menu End --->
   </header>
+  --->
+
+
 
   <main>
     <!--- Home Header --->
@@ -107,6 +137,8 @@
         </div>
       </div>
     </div>
+
+    <!--- Home Header--->
 
 
 

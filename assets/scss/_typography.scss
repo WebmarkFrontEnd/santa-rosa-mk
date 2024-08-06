@@ -8,24 +8,20 @@ h6 {
   font-weight: 400;
 }
 
-h1 {
-  font-size: 80px;
-  line-height: 1.27em;
-}
-
+h1,
 h2 {
-  font-size: 80px;
-  line-height: 1.27em;
+  font-size: 32px;
+  line-height: 1.5em;
 }
 
 h3 {
-  font-size: 28px;
-  line-height: 1.2em;
+  font-size: 18px;
+  line-height: 1.77em;
 }
 
 h4 {
-  font-size: 24px;
-  line-height: 1.2em;
+  font-size: 18px;
+  line-height: 1.44em;
 }
 
 p {
@@ -33,14 +29,10 @@ p {
   font-size: 18px;
 }
 
-.large {
-  font-size: 24px;
-  line-height: 2em;
-}
-
+.large,
 .small {
-  font-size: 18px;
-  line-height: 1.77em;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 @include media-breakpoint-up(md) {
@@ -54,13 +46,28 @@ p {
 @include media-breakpoint-up(lg) {
   h1,
   h2 {
-    font-size: 32px;
+    font-size: 80px;
+    line-height: 1.27em;
   }
   h3 {
     font-size: 24px;
+    line-height: 1.4em;
+  }
+  h4 {
+    font-size: 28px;
+    line-height: 1.4em;
   }
 
   p {
     font-size: 18px;
+  }
+  .large {
+    font-size: 24px;
+    line-height: 2em;
+  }
+
+  .small {
+    font-size: 18px;
+    line-height: 1.77em;
   }
 }
