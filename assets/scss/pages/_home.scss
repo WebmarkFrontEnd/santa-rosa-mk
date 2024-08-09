@@ -1,2 +1,43 @@
 //Home Header Start
 //Mobile Device
+
+.home-header {
+  background: linear-gradient(
+      180deg,
+      rgba($light-text, 0.86),
+      rgba($light-text, 0.86)
+    ),
+    url('../img/home/home-header-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0 100px;
+}
+
+//Small Device
+
+@include media-breakpoint-up(sm) {
+  .home-header {
+    padding: 100px 0 120px;
+  }
+}
+
+//Medium Device
+
+@include media-breakpoint-up(md) {
+  .home-header {
+    padding: 110px 0 130px;
+  }
+}
+
+//Medium Device
+
+@include media-breakpoint-up(xxl) {
+  .home-header {
+    padding: 120px 0 180px;
+
+    img {
+      max-width: 1175px;
+      margin: auto;
+    }
+  }
+}

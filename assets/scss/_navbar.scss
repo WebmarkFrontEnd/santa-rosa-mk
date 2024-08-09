@@ -5,8 +5,8 @@ header {
       content: '';
       display: block;
       border-top: 0px;
-      border-right: 1px solid $dark !important;
-      border-bottom: 1px solid $dark !important;
+      border-right: 1px solid $primary !important;
+      border-bottom: 1px solid $primary !important;
       border-left: 0px;
       transform: rotate(45deg);
       height: 8px;
@@ -39,22 +39,10 @@ header {
     }
   }
 
-  .top-bar {
-    background-color: $secondary;
-    p {
-      font-size: 6px;
-      letter-spacing: 0.36px;
-      a {
-        color: inherit;
-        margin-left: 5px;
-        text-decoration: none;
-      }
-    }
-  }
   .navbar {
     li,
     a {
-      font-family: $altivo;
+      font-family: $brandon;
       font-weight: 300;
       color: $dark;
       text-transform: uppercase;
@@ -88,13 +76,6 @@ header {
 
 @include media-breakpoint-up(md) {
   header {
-    .top-bar {
-      background-color: $secondary;
-      p {
-        font-size: 14px;
-        letter-spacing: 0.84px;
-      }
-    }
     .dropdown-toggle:after {
       border-right: 2px solid #201818 !important;
       border-bottom: 2px solid #201818 !important;
