@@ -41,3 +41,270 @@
     }
   }
 }
+
+//About Us Start
+
+//Mobile Device
+
+.about-us {
+  .container {
+    padding: 40px 24px 34px;
+    border-radius: 32px 32px 0 0;
+    margin-top: -20%;
+    background: $light;
+  }
+
+  .our-feature-services {
+    flex-direction: column;
+  }
+
+  .about-img {
+    border-bottom: 1px solid #707070;
+    padding: 0 10px;
+  }
+
+  .icon-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding: 0 8px;
+    &:last-child {
+      margin-bottom: 40px;
+    }
+    img {
+      width: 28px;
+    }
+  }
+
+  .icon-box p {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $brandon;
+    color: $primary;
+  }
+
+  .about-us-santa-rosa {
+    flex-direction: column;
+    padding-top: 24px;
+    hr {
+      display: none;
+    }
+    .content {
+      p {
+        font-family: $orpheuspro;
+      }
+    }
+  }
+}
+
+//Small Device
+
+@include media-breakpoint-up(sm) {
+  .about-us {
+    .container {
+      padding: 40px 40px 74px;
+      margin-top: -15%;
+    }
+
+    .icon-box {
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 30px;
+      }
+      img {
+        width: 24px;
+      }
+    }
+
+    .our-feature-services {
+      .col {
+        &:first-child {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+      }
+    }
+
+    .about-img {
+      text-align: center;
+      padding: 0;
+      img {
+        max-width: 72%;
+        margin: 0 auto;
+      }
+    }
+
+    .about-us-santa-rosa {
+      &:last-child {
+        max-width: 82%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+//Medium Device
+
+@include media-breakpoint-up(md) {
+  .about-us {
+    .container {
+      padding: 0 34px 38px;
+      margin-top: -10%;
+    }
+
+    .icon-box {
+      margin-bottom: 8px;
+      gap: 16px;
+      p {
+        font-size: 16px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        width: 18px;
+      }
+    }
+
+    .our-feature-services {
+      border-bottom: 1px solid #707070;
+      flex-direction: row-reverse;
+      padding: 0 40px;
+      align-items: center;
+
+      .col {
+        &:first-child {
+          justify-content: flex-start;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .about-img {
+      margin-top: -20px;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .about-us-santa-rosa {
+      &:last-child {
+        max-width: 92%;
+        margin: 0 auto;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+//Laptop Device
+
+@include media-breakpoint-up(xl) {
+  .about-us {
+    position: relative;
+    .container {
+      padding: 40px 80px 100px;
+      margin-top: -6%;
+      overflow: hidden;
+    }
+
+    .our-feature-services {
+      border-bottom: 0;
+      padding: 0;
+      .col {
+        &:first-child {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .icon-box {
+      margin-bottom: 0;
+      padding: 0;
+      p {
+        font-size: 20px;
+      }
+      img {
+        width: 30px;
+      }
+    }
+
+    .about-us-santa-rosa {
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-top: 80px;
+      &:last-child {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      hr {
+        border: 0;
+        opacity: 1;
+        margin: 0;
+        width: 914px;
+        height: 1px;
+        background: $dark;
+        margin: 32px 0;
+        margin-left: -18%;
+        display: block;
+      }
+
+      .about-thumbnail {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+
+      .content {
+        flex-direction: column;
+        gap: 16px;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+//Desktop Device
+
+@include media-breakpoint-up(xxl) {
+  .about-us {
+    .icon-box {
+      p {
+        font-size: 28px;
+      }
+
+      img {
+        width: 52px;
+      }
+    }
+
+    .about-us-santa-rosa {
+      .content {
+        p {
+          font-size: 24px;
+          line-height: 2em;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+//About Us End
+
+//***************************//
+//***************************//
